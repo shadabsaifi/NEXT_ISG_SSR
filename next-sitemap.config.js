@@ -1,4 +1,4 @@
-const siteUrl = "https://jsonplaceholder.typicode.com"
+const siteUrl = "http://43.204.226.153"
 
 module.exports = {
     siteUrl,
