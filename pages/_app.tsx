@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <div>
       <Head>
-        <meta name="google-site-verification" content="iFh3v6qlT8yo54OeWECGp7zxaGuYhf0FT01Rgpsif78" />
+      <meta name="google-site-verification" content="lP0oflGwPxxx_XQAz-baDqGnew3ZZ4zrU06gPiMuFHY" />
       </Head>
       <Component {...pageProps} />
     </div>
