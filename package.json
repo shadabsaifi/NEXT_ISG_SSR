@@ -6,8 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "start:prod": "next start -p 80",
     "lint": "next lint",
-    "serve-json": "json-server --watch db.json --port 4000",
+    "serve-json": "json-server --watch db.json -p 4000",
     "postbuild":"next-sitemap"
   },
   "dependencies": {
