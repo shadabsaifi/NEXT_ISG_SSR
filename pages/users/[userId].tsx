@@ -1,8 +1,13 @@
 import { NextPage } from "next";
+import Head from "next/head";
 
 const UserDetails : NextPage = ({ user }:any)=>{
     return (
     <>
+        <Head>
+            <title>User Detail - TitleMetaNextjs</title>
+            <meta name="description" content="Meta description for the users details page"/>
+        </Head>
         <h1>
             User Information
         </h1>
