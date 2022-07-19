@@ -1,43 +1,13 @@
 import type { NextPage } from 'next'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/router';
+import { google } from 'googleapis';
+import getConfig from 'next/config';
+import key from './../google_service_account.json';
 
 
 const Home: NextPage = (response:any) => {
   
-  const route = useRouter();
-
-  // const clickHandler = ()=>{
-  //   alert("Order confirmd");
-  //   route.replace('/product');
-  // }
-
-  // return (
-  //   <div>
-  //     <h1>Home Page</h1>
-  //     <Link href='/albums'>
-  //     <a>
-  //       Static Generatoion(fallback: false) - Click Here To See Albums List
-  //     </a>
-  //     </Link>
-  //     <hr />
-  //     <Link href='/posts'>
-  //     <a>
-  //       Static Generatoion(fallback: true/'blocking') - Click Here to See Post List
-  //     </a>
-  //     </Link>
-  //     <hr />
-  //     <Link href='/users'>
-  //     <a>
-  //       Server Side Rendering - Click Here to See User List
-  //     </a>
-  //     </Link>
-  //     <hr />
-  //     {/* <button onClick={clickHandler}>
-  //         Form Submit
-  //     </button> */}
-  //   </div>
-  // )
   const { pages } = response;
   return <>
     <h1>List of pages</h1>
@@ -60,6 +30,39 @@ export default Home;
 
 export async function getServerSideProps(ctx:any) {
   
+  // const { publicRuntimeConfig, serverRuntimeConfig } = getConfig();
+  // var token = '';
+  // const jwtClient = new google.auth.JWT(
+  //   key.client_email,
+  //   "",
+  //   key.private_key,
+  //   ["https://www.googleapis.com/auth/indexing"],
+  //   ""
+  // );
+
+  // jwtClient.authorize(async function(err, tokens) {
+  //   console.log("er==============>>>>",err)
+  //   console.log("tokens==============>>>>",tokens)
+  //   if (err) {
+  //     console.log(err);
+  //     return;
+  //   }
+  //   // token = tokens.access_token;
+  //   const res = await fetch('https://indexing.googleapis.com/v3/urlNotifications:publish', {
+  //     method: 'POST',
+  //     body: JSON.stringify({
+  //       "url": "http://43.204.226.153/home",
+  //       "type": "URL_UPDATED"
+  //     }),
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //       // 'auth': `Bearer ${access_token}`,
+  //     }
+  //   })
+  //   const auth = res.json();
+  //   console.log("auth============>>>>",auth);
+  // });
+  
   const response = await fetch('http://localhost:4000/pages');
   const pages = await response.json();
   return {
@@ -67,5 +70,7 @@ export async function getServerSideProps(ctx:any) {
       pages
     }
   }
+
+
 
 }
