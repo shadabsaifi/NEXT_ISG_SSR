@@ -1,21 +1,22 @@
 import { NextPage } from "next";
+import Head from "next/head";
 import Link from "next/link";
 
 const ContactUs : NextPage = ({ contactUs }:any)=>{
+
     return (
-        <>
-
-            <h2>
-            <Link href={'/'}>
-                <a> Click Here to go back dashboard</a>
-            </Link>
-            </h2>
-
-            <h2>Contact Us Page</h2>
+        <div>
+          <Head>
+            <title>Contact - TitleMetaNextjs</title>
+            <meta name="description" content="Meta description for the contact page"/>
+          </Head>
+          <div>
+            <h1>This is Contact Us page</h1>
             <br/>
             <p> { contactUs.description }</p>
-        </>
-    )
+          </div>
+        </div>
+      );
 }
 
 export default ContactUs;

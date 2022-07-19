@@ -1,0 +1,24 @@
+.navigation {
+    position: sticky;
+    top: 0;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    justify-content: space-evenly;
+    -webkit-box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+    box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+    width: 100%;
+    height: 5rem;
+    align-items: center;
+  }
+  
+  .navigation .item {
+    list-style: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  .navigation .item:hover {
+    color: rgb(151, 151, 151);
+  }

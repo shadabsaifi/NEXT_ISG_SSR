@@ -1,19 +1,21 @@
 import { NextPage } from "next";
+import Head from "next/head";
 import Link from "next/link";
 
 const AboutUs : NextPage = ({ aboutUs }:any)=>{
     return (
-        <>
-        <h2>
-        <Link href={'/'}>
-            <a> Click Here to go back dashboard</a>
-        </Link>
-        </h2>
-            <h2>About Us Page</h2>
+        <div>
+          <Head>
+            <title>About - TitleMetaNextjs</title>
+            <meta name="description" content="Meta description for the about page"/>
+          </Head>
+          <div>
+            <h1>This is About Us page</h1>
             <br/>
             <p> { aboutUs.description }</p>
-        </>
-    )
+          </div>
+        </div>
+    );
 }
 
 export default AboutUs;

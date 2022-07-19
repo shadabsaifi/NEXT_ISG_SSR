@@ -1,21 +1,32 @@
 import { NextPage } from "next";
+import Head from "next/head";
 import Link from "next/link";
 
 const UserList : NextPage = ( { users } : any )=>{
-    return <>
-        <h1>User List</h1>
-        { users.map((user : any)=>{
-            return (
-                <div key= { user.id }>
-                    <Link href={`/users/${user.id}`}>
-                        <p>Username : { user.username }</p>
-                        <hr/>
-                    </Link> 
-                    <hr />
-                </div>
-            )
-        }) }
-    </>
+
+    return (
+        <div>
+          <Head>
+            <title>Users - TitleMetaNextjs</title>
+            <meta name="description" content="Meta description for the users page"/>
+          </Head>
+          <div>
+            <h1>This is users page</h1>
+            {
+                users.map(( user:any )=>{
+                    return (
+                        <div key={ user.id }>
+                            <Link href={`users/${ user.id }`} passHref>
+                            <h2>{ user.id }.) { user.username }</h2>
+                            </Link>
+                            <hr />
+                        </div>
+                    )
+                })
+            }
+          </div>
+        </div>
+    );
 }
 
 export default UserList;
