@@ -11,11 +11,6 @@ const Navigation: NextPage = () => {
           <div className={styles.item}>Home</div>
         </a>
       </Link>
-      <Link href="/users">
-        <a>
-          <div className={styles.item}>Users</div>
-        </a>
-      </Link>
       <Link href="/about-us">
         <a>
           <div className={styles.item}>About</div>

@@ -7,13 +7,12 @@ const ContactUs : NextPage = ({ contactUs }:any)=>{
     return (
         <div>
           <Head>
-            <title>Contact - TitleMetaNextjs</title>
-            <meta name="description" content="Meta description for the contact page"/>
+            <title>Contact - Title Meta NextJS</title>
           </Head>
           <div>
             <h1>This is Contact Us page</h1>
             <br/>
-            <p> { contactUs.description }</p>
+            <p> { contactUs.title }</p>
           </div>
         </div>
       );
@@ -24,7 +23,7 @@ export default ContactUs;
 export async function getServerSideProps(ctx:any) {
     
     const { resolvedUrl } = ctx;
-    const response = await fetch(`http://localhost:4000${resolvedUrl}`);
+    const response = await fetch(`https://jsonplaceholder.typicode.com/posts/9`);
     const contactUs = await response.json();
     return {
         props:{

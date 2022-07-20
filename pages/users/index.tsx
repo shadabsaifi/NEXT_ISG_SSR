@@ -7,8 +7,7 @@ const UserList : NextPage = ( { users } : any )=>{
     return (
         <div>
           <Head>
-            <title>Users - TitleMetaNextjs</title>
-            <meta name="description" content="Meta description for the users page"/>
+            <title>Users - Title Meta NextJS</title>
           </Head>
           <div>
             <h1>This is users page</h1>

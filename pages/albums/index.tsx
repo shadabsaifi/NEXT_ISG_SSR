@@ -1,8 +1,12 @@
 import { NextPage } from "next";
+import Head from "next/head";
 import Link from "next/link";
 
 const AlbumbList : NextPage = ( { albums } : any )=>{
     return <>
+        <Head>
+            <title>Albums - Title Meta NextJS</title>
+        </Head>
         <h1>List of Albums</h1>
         {
             albums.map(( album:any )=>{

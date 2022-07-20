@@ -1,4 +1,5 @@
 import { NextPage } from "next";
+import Head from "next/head";
 import { useRouter } from "next/router";
 
 const PostDetail : NextPage = ( { post } : any )=>{
@@ -11,6 +12,9 @@ const PostDetail : NextPage = ( { post } : any )=>{
     }
 
     return <>
+        <Head>
+            <title>Posts Details - Title Meta NextJS</title>
+        </Head>
         <h2> { post.body }</h2>
     </>
 }

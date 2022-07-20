@@ -1,4 +1,5 @@
 import { NextPage } from "next";
+import Head from "next/head";
 import { useRouter } from "next/router";
 
 const AlbumDetails : NextPage = ( { album } : any )=>{
@@ -6,11 +7,17 @@ const AlbumDetails : NextPage = ( { album } : any )=>{
     const route = useRouter();
     if(route.isFallback){
         return <>
+                <Head>
+                    <title>Albums Details - Title Meta NextJS</title>
+                </Head>
             <h2>Loading.....</h2>
         </>
     }
 
     return <>
+        <Head>
+            <title>Albums Details - Title Meta NextJS</title>
+        </Head>
         <h2> Title : { album.title }</h2>
     </>
 }

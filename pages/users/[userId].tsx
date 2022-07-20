@@ -6,7 +6,6 @@ const UserDetails : NextPage = ({ user }:any)=>{
     <>
         <Head>
             <title>User Detail - TitleMetaNextjs</title>
-            <meta name="description" content="Meta description for the users details page"/>
         </Head>
         <h1>
             User Information

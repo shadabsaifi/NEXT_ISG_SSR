@@ -7,12 +7,11 @@ const AboutUs : NextPage = ({ aboutUs }:any)=>{
         <div>
           <Head>
             <title>About - TitleMetaNextjs</title>
-            <meta name="description" content="Meta description for the about page"/>
           </Head>
           <div>
             <h1>This is About Us page</h1>
             <br/>
-            <p> { aboutUs.description }</p>
+            <p> { aboutUs.title }</p>
           </div>
         </div>
     );
@@ -23,7 +22,7 @@ export default AboutUs;
 export async function getServerSideProps(ctx:any) {
 
     const { resolvedUrl } = ctx;
-    const response = await fetch(`http://localhost:4000${resolvedUrl}`);
+    const response = await fetch(`https://jsonplaceholder.typicode.com/posts/3`);
     const aboutUs = await response.json();
     return {
         props:{

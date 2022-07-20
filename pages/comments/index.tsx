@@ -1,4 +1,5 @@
 import { NextPage } from "next";
+import Head from "next/head";
 import { useEffect, useState } from "react";
 
 const Comments : NextPage = ()=>{
@@ -30,6 +31,9 @@ const Comments : NextPage = ()=>{
             comments.map(( comment:any )=>{
                 return (
                     <div key={ comment.id }>
+                    <Head>
+                        <title>Comments - Title Meta NextJS</title>
+                    </Head>
                     <h2>{ comment.id } { comment.name }</h2>
                         <hr />
                     </div>
