@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import styles from "../../styles/Navigation.module.css";
+import styles from "../../../styles/Navigation.module.css";
 import Head from "next/head";
 import Link from "next/link";
 
@@ -17,25 +17,25 @@ const List : NextPage = ({ home }:any)=>{
             <br/>
             <h2>Click on the below hyperlink to check the information</h2>
             <hr/>
-            <Link href="/dashboard/users">
+            <Link href="/dashboard/list/users">
               <a>
                 <strong><div className={styles.item}>Users</div></strong>
               </a>
             </Link>
             <hr/>
-            <Link href="/dashboard/albums">
+            <Link href="/dashboard/list/albums">
               <a>
                 <strong><div className={styles.item}>Albums</div></strong>
               </a>
             </Link>
             <hr/>
-            <Link href="/dashboard/posts">
+            <Link href="/dashboard/list/posts">
               <a>
                 <strong><div className={styles.item}>Posts</div></strong>
               </a>
             </Link>
             <hr/>
-            <Link href="/dashboard/comments">
+            <Link href="/dashboard/list/comments">
               <a>
                 <strong><div className={styles.item}>Comments</div></strong>
               </a>
