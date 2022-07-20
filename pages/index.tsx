@@ -17,30 +17,11 @@ const Home : NextPage = ({ home }:any)=>{
             <br/>
             <h2>Click on the below hyperlink to check the information</h2>
             <hr/>
-            <Link href="/users">
+            <Link href="/dashboard">
               <a>
-                <strong><div className={styles.item}>Users</div></strong>
+                <strong><div className={styles.item}>Dashboard</div></strong>
               </a>
             </Link>
-            <hr/>
-            <Link href="/albums">
-              <a>
-                <strong><div className={styles.item}>Albums</div></strong>
-              </a>
-            </Link>
-            <hr/>
-            <Link href="/posts">
-              <a>
-                <strong><div className={styles.item}>Posts</div></strong>
-              </a>
-            </Link>
-            <hr/>
-            <Link href="/comments">
-              <a>
-                <strong><div className={styles.item}>Comments</div></strong>
-              </a>
-            </Link>
-            <hr/>
           </div>
         </div>
       );
