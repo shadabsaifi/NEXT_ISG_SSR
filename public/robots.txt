@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: http://43.204.226.153
+
+# Sitemaps
+Sitemap: http://43.204.226.153/sitemap.xml

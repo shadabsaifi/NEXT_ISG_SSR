@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002Fdashboard\u002Flist\u002Falbums","\u002Fdashboard\u002Flist\u002Falbums\u002F[albumId]","\u002Fdashboard\u002Flist\u002Fposts","\u002Fdashboard\u002Flist\u002Fposts\u002F[postId]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
