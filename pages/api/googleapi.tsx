@@ -20,7 +20,7 @@ const handler = async (req:any, res:any)=>{
         const indexRequest = await indexer.urlNotifications.publish({
             requestBody: {
               type: 'URL_UPDATED',
-              url: `http://43.204.226.153`,
+              url: `http://52.66.210.90`,
             },
         })
         res.status(200).send(indexRequest.data)

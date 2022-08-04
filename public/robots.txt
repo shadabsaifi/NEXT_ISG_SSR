@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: http://43.204.226.153
+Host: http://52.66.210.90
 
 # Sitemaps
-Sitemap: http://43.204.226.153/sitemap.xml
+Sitemap: http://52.66.210.90/sitemap.xml

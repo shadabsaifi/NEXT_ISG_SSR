@@ -121,7 +121,7 @@ function MyApp({ Component , pageProps  }) {
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx("meta", {
                         property: "og:url",
-                        content: `http://43.204.226.153${route.asPath}`
+                        content: `http://52.66.210.90${route.asPath}`
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx("meta", {
                         property: "og:type",
@@ -145,7 +145,7 @@ function MyApp({ Component , pageProps  }) {
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx("meta", {
                         name: "google-site-verification",
-                        content: "lP0oflGwPxxx_XQAz-baDqGnew3ZZ4zrU06gPiMuFHY"
+                        content: "QfIAQ_FTefnHhIuSkeEf3tH9DmtEwuBnzh8JMqFereo"
                     })
                 ]
             }),

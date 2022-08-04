@@ -1,4 +1,4 @@
-const siteUrl = 'http://43.204.226.153';
+const siteUrl = 'http://52.66.210.90';
 
 module.exports = {
     siteUrl: siteUrl,
